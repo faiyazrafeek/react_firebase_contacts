@@ -68,7 +68,7 @@ const ContactForm = (props) => {
                         <textarea className="form-control" placeholder="Address" name="address" value={values.address} onChange={handleInputChange}></textarea>
                 </div>
                 <div className="form-group">
-                    <input type="submit" value={props.currentId == '' ? "Save" : "Update"} className="btn btn-primary btn-block"/>
+                    <input type="submit" value={props.currentId === '' ? "Save" : "Update"} className="btn btn-primary btn-block"/>
                 </div>
             </form>
         </div>

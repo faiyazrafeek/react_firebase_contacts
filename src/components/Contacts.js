@@ -20,7 +20,7 @@ const Contacts = () => {
     
 
     const addOrEdit = obj =>{
-        if(currentId == '')
+        if(currentId === '')
             firebaseDb.child('contacts').push(
                 obj,
                 err => {
@@ -86,10 +86,10 @@ const Contacts = () => {
                                                 <td>{ contactObjects[id].mobile }</td>
                                                 <td>{ contactObjects[id].email }</td>
                                                 <td>
-                                                    <a className="btn text-primary" onClick={()=> {setcurrentId(id)}}>
+                                                    <a className="btn text-primary" href="#!" onClick={()=> {setcurrentId(id)}}>
                                                         <i className="fas fa-pencil-alt"></i>
                                                     </a>
-                                                    <a className="btn text-danger" onClick={()=>{onDelete(id)}}>
+                                                    <a className="btn text-danger" href="#!" onClick={()=>{onDelete(id)}}>
                                                         <i className="fas fa-trash-alt"></i>
                                                     </a>
                                                 </td>
