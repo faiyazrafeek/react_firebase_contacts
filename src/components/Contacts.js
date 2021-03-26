@@ -69,7 +69,7 @@ const Contacts = () => {
                         <ContactForm {...({ addOrEdit, currentId, contactObjects})} />                    
                     </div>
                     <div className="col-md-7"> 
-                    <div>                         
+                    <div className="table-responsive">                         
                         <table className="table table-borderless table-striped ">
                             <thead className="thead-light">
                                 <tr>
