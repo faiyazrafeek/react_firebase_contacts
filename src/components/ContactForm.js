@@ -53,7 +53,7 @@ const ContactForm = (props) => {
                                 <i className="fa fa-mobile-alt"></i>
                             </div>
                         </div>
-                    <input type="text" className="form-control" placeholder="Mobile" name="mobile" value={values.mobile} onChange={handleInputChange} />
+                    <input type="text" className="form-control" placeholder="Mobile" name="mobile" value={values.mobile} onChange={handleInputChange} required/>
                 </div>
                 <div className="form-group input-group col-md-6">
                     <div className="input-group-prepend">
@@ -61,14 +61,14 @@ const ContactForm = (props) => {
                             <i className="fa fa-envelope"></i>
                         </div>
                     </div>
-                    <input type="email"  className="form-control" placeholder="Email" name="email" value={values.email} onChange={handleInputChange} />
+                    <input type="email"  className="form-control" placeholder="Email" name="email" value={values.email} onChange={handleInputChange} required/>
                 </div>                    
                 </div>
                 <div className="form-group">
-                        <textarea className="form-control" placeholder="Address" name="address" value={values.address} onChange={handleInputChange}></textarea>
+                        <textarea className="form-control" placeholder="Address" name="address" value={values.address} onChange={handleInputChange} required></textarea>
                 </div>
                 <div className="form-group">
-                    <input type="submit" value={props.currentId === '' ? "Save" : "Update"} className="btn btn-primary btn-block"/>
+                    <input type="submit" value={props.currentId === '' ? "Save" : "Update"} className="btn btn-primary btn-block" />
                 </div>
             </form>
         </div>
